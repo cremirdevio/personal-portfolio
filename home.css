@@ -150,3 +150,57 @@ nav #menu-button:hover {
 .post-content p {
   line-height: 1.5;
 }
+
+/* Featured Projects */
+
+.featured-projects {
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+.featured-projects > h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-meta > .project-date, .project-meta > .project-tags  {
+  background-color: #142850;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta > .project-tags {
+  margin-right: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #90a4ca;
+  white-space: nowrap;
+}
