@@ -1,14 +1,22 @@
-## Assignment #2
+# Portfolio Project
 
-1. Create the footer for the home page.
-1. Remember that the footer's css should be in `footer.css`
-![Footer](https://github.com/cremirdevio/personal-portfolio/blob/main/images/footer.png)
+## Assignment #4
 
-## Assignment #3
-1. Create blogs page as seen in the image below.
-1. Remember to create a css file for blog page.
-1. You could use some hint from the home page.
+### Create Projects Page
 
-![Blog Page Top](https://github.com/cremirdevio/personal-portfolio/blob/main/images/blogs-1.png)
+> **Note** : Use the approach I told you when you want to create a new page. So that your won't omit important details.
 
-![Blog Page Bottom](https://github.com/cremirdevio/personal-portfolio/blob/main/images/blogs-2.png)
+1. Create a new folder for the your works, call it `projects`.
+1. Create `index.html` file inside it and proceed with work.
+1. Your page should look like the image below.
+![Projects Page](https://github.com/cremirdevio/personal-portfolio/blob/main/assets/images/tasks/projects.png)
+
+## Assignment #5
+
+1. Create a new folder for the your works, call it `project-detail`.
+1. Create `index.html` file inside it and proceed with work.
+1. Your page should look like the image below.
+
+![Project Details Top](https://github.com/cremirdevio/personal-portfolio/blob/main/assets/images/tasks/project-details-1.png)
+
+![Project Details Bottom](https://github.com/cremirdevio/personal-portfolio/blob/main/assets/images/tasks/project-details-2.png)
