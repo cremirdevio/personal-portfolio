@@ -5,6 +5,7 @@
 ### Create Projects Page
 
 > **Note** : Use the approach I told you when you want to create a new page. So that your won't omit important details.
+> All images needed have been provided in the `assets/images` folder.
 
 1. Create a new folder for the your works, call it `projects`.
 1. Create `index.html` file inside it and proceed with work.
