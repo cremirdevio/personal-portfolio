@@ -140,22 +140,3 @@
   background-color: #90a4ca;
   white-space: nowrap;
 }
-/* footer section */
-.footer01 {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.footer01 a {
-  margin-right: 25px;
-  color: darkslategray;
-}
-.footer01 p {
-  margin-top: 35px;
-  margin-bottom: 20px;
-  font-size: medium;
-}
-footer>a:hover {
-  color: dimgray;
-}
-
