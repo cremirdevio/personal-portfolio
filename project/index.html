@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="../assets/css/home.css"/>
+    <link rel="stylesheet" href="../assets/css/navigation.css"/>
+    <link rel="stylesheet" href="../assets/css/footer.css"/>
+    <link rel="stylesheet" href="../assets/css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c350ae8f8.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <div class="main">
+    <nav id="main-nav" class="hide">
+      <span id="menu-button">
+        <svg style="width: 36px; height: 36px" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+            />
+        </svg>
+      </span>
+    
+            <!-- Links -->
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item">
+          <a href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./my-projects.html">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="./blog">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact-me.html">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="projects-container">
+      <div class="project-heading">
+        <h1>Projects</h1>
+      </div>
+      <div class="project1-container">
+        <div class="dashboard-image">
+          <img src="../assets/images/dashboard.png" alt="image showing a project on dashboard">
+        </div>
+        <div class="dashboard-design-heading">
+          <h2>Designing Dashboards</h2>
+          <span id="dashboard-year">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
+          <span id="project-name">Dashboard</span>
+        </div>
+        <div class="dashboard-design-details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Consequuntur adipisci possimus doloremque perspiciatis 
+          modi explicabo porro tempore atque? Inventore, cumque.
+        </div>
+      </div>
+      <div class="project2-container">
+        <div class="project2-image">
+          <img src="../assets/images/project-2.png" alt="image showing a project on landing pages">
+        </div>
+
+        <div class="langing-pages-heading">
+          <h2>Designing Landing Pages</h2>
+          <span id="project2-year">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
+          <span id="project2-name">Website</span>
+        </div>
+
+        <div class="landing-page-details">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Consequuntur inventore doloribus debitis hic enim sint 
+          exercitationem eveniet distinctio ipsa iure iusto commodi, Lorem ipsum 
+          dolor sit amet. rerum porro!
+        </div>
+
+      </div>
+    </div>
+    <div class="footer01">
+      <footer>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-2x fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-2x fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+        </div>
+        <p>Copyright ©2020 All rights reserved</p>
+      </footer>
+    </div>
+
+  </div>  
+</body>
+<script>
+    document.getElementById("menu-button").addEventListener("click", toggleNav);
+
+    let closeSVG = new DOMParser().parseFromString(
+      `<svg style="width:36px;height:36px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+      </svg>`,
+      "text/html"
+    ).body.firstElementChild;
+
+    let openSVG = new DOMParser().parseFromString(
+      `<svg style="width: 36px; height: 36px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+            />
+          </svg>`,
+      "text/html"
+    ).body.firstElementChild;
+
+    function toggleNav() {
+      let classes = document.getElementById("nav-list").classList;
+
+      if (classes.contains("show")) {
+        document.getElementById("menu-button").innerHTML = "";
+        document.getElementById("menu-button").append(openSVG);
+        document.getElementById("nav-list").classList.remove("show");
+        document.getElementById("main-nav").classList.add("hide");
+      } else {
+        document.getElementById("menu-button").innerHTML = "";
+        document.getElementById("menu-button").append(closeSVG);
+        document.getElementById("nav-list").classList.add("show");
+        document.getElementById("main-nav").classList.remove("hide");
+      }
+    }
+  </script>
+
+</html>
