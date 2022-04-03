@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/navigation.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/details.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c350ae8f8.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="main">
+        <!-- Navigation -->
+      <nav id="main-nav" class="hide">
+        <span id="menu-button">
+          <svg style="width: 36px; height: 36px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+            />
+          </svg>
+        </span>
+
+        <!-- Links -->
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item">
+            <a href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../project/index.html">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../blog/index.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact-me.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="details-page">
+        <div class="dashboard-designing">
+            <div class="dashboard-title-box">
+                <h1>Designing Dashboards with usability in mind</h1>
+                <div class="sub-dashboard">
+                    <div id="design-year">2020</div> &nbsp; &nbsp; &nbsp;
+                    <div id="design-note">Dashboard, User Experience Design</div>
+                </div>
+            </div>
+            <div class="dashboard-article">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae dolorum neque nostrum numquam perferendis nesciunt. 
+                recusandae nobis cum quo quos, Lorem ipsum dolor sit sat,
+                deserunt fugiat modi voluptate reprehenderit dolor ipsa esse.
+            </div>
+            <div class="dashboard-pix">
+                <img src="../assets/images/project-details-1.png" alt="image of a dashboard">
+            </div>
+        </div>
+        <div class="design2-box">
+            <div class="design2-details">
+                <h2>Heading 1</h2>
+                <h3>Heading 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa deserunt atque saepe, exercitationem, id nobis obcaecati 
+                    nesciunt ea tempore consequuntur non nam. Repudiandae soluta quas, 
+                    doloribus laboriosam explicabo cumque ad.
+                </p>
+            </div>
+            <div class="design2-pix">
+                <img src="../assets/images/project-details-2.png" alt="image showing project2">
+            </div>
+            <div class="order-pix-box">
+                <img src="../assets/images/project-details-3.png" alt="image of order section">
+            </div>
+        </div>
+      </div>
+      <div class="footer01">
+        <footer>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-2x fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2x fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+          </div>
+          <p>Copyright ©2020 All rights reserved</p>
+        </footer>
+      </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("menu-button").addEventListener("click", toggleNav);
+
+    let closeSVG = new DOMParser().parseFromString(
+      `<svg style="width:36px;height:36px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+      </svg>`,
+      "text/html"
+    ).body.firstElementChild;
+
+    let openSVG = new DOMParser().parseFromString(
+      `<svg style="width: 36px; height: 36px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+            />
+          </svg>`,
+      "text/html"
+    ).body.firstElementChild;
+
+    function toggleNav() {
+      let classes = document.getElementById("nav-list").classList;
+
+      if (classes.contains("show")) {
+        document.getElementById("menu-button").innerHTML = "";
+        document.getElementById("menu-button").append(openSVG);
+        document.getElementById("nav-list").classList.remove("show");
+        document.getElementById("main-nav").classList.add("hide");
+      } else {
+        document.getElementById("menu-button").innerHTML = "";
+        document.getElementById("menu-button").append(closeSVG);
+        document.getElementById("nav-list").classList.add("show");
+        document.getElementById("main-nav").classList.remove("hide");
+      }
+    }
+  </script>
+</html>
