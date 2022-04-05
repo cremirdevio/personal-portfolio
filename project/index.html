@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-    <link rel="stylesheet" href="../assets/css/home.css"/>
     <link rel="stylesheet" href="../assets/css/navigation.css"/>
     <link rel="stylesheet" href="../assets/css/footer.css"/>
     <link rel="stylesheet" href="../assets/css/project.css">
@@ -30,6 +29,7 @@
 </head>
 <body>
   <div class="main">
+    <!-- Navigation -->
     <nav id="main-nav" class="hide">
       <span id="menu-button">
         <svg style="width: 36px; height: 36px" viewBox="0 0 24 24">
@@ -56,46 +56,43 @@
         </li>
       </ul>
     </nav>
-    <div class="projects-container">
+
+    <!-- Projects -->
+    <div class="projects-section">
       <div class="project-heading">
         <h1>Projects</h1>
       </div>
-      <div class="project1-container">
-        <div class="dashboard-image">
-          <img src="../assets/images/dashboard.png" alt="image showing a project on dashboard">
+
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../assets/images/project-1.png" alt="Designing Dashboards" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Designing Dashboards</h3>
+
+            <div class="project-meta">
+              <span class="project-date">2020</span>
+              <span class="project-tags">Dashboard</span>
+              <span class="project-tags">HTML & CSS</span>
+              <span class="project-tags">Javascript</span>
+            </div>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reprehenderit suscipit quaerat rerum ipsum repellendus unde
+              quidem, illum nostrum provident laborum eligendi, quibusdam
+              accusantium! Provident ab dolore officiis nesciunt sed rem.
+            </p>
+          </div>
         </div>
-        <div class="dashboard-design-heading">
-          <h2> <a href="../project-detail/index.html">Designing Dashboards</a></h2>
-          <!-- Didnt style the hyperlink for easy identification from others -->
-          <span id="dashboard-year">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span id="project-name">Dashboard</span>
-        </div>
-        <div class="dashboard-design-details">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Consequuntur adipisci possimus doloremque perspiciatis 
-          modi explicabo porro tempore atque? Inventore, cumque.
-        </div>
+
+        
       </div>
-      <div class="project2-container">
-        <div class="project2-image">
-          <img src="../assets/images/project-2.png" alt="image showing a project on landing pages">
-        </div>
 
-        <div class="langing-pages-heading"> 
-          <h2>Designing Landing Pages</h2>
-          <span id="project2-year">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span id="project2-name">Website</span>
-        </div>
-
-        <div class="landing-page-details">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Consequuntur inventore doloribus debitis hic enim sint 
-          exercitationem eveniet distinctio ipsa iure iusto commodi, Lorem ipsum 
-          dolor sit amet. rerum porro!
-        </div>
-
-      </div>
     </div>
+
+    <!-- Footer -->
     <div class="footer01">
       <footer>
         <div class="footer-icons">
