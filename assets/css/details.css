@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 .details-page {
-    margin: 5px 30px;
+    padding: 0 1rem;
 }
-.dashboard-title-box h1 {
+.project-title-box h1 {
     font-weight: 900;
     font-size: 2.1rem;
     color: #131212ef;
     margin-bottom: 20px;
 }
-.dashboard-title-box {
+.project-title-box {
     padding-bottom: 20px;
 }
 #design-year {
@@ -29,11 +29,11 @@
 .sub-dashboard {
     display: flex;
 }
-.dashboard-article {
+.project-article {
     padding-bottom: 20px;
     line-height: 1.5;
 }
-.dashboard-pix {
+.project-pix {
     padding-bottom: 20px;
 }
 .design2-details>h3 {
