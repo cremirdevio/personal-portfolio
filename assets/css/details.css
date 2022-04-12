@@ -3,19 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.details-page {
+.project-content {
     padding: 0 1rem;
 }
-.project-title-box h1 {
+.project-title h1, .project-title h2 {
     font-weight: 900;
     font-size: 2.1rem;
     color: #131212ef;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
-.project-title-box {
-    padding-bottom: 20px;
-}
-#design-year {
+
+#project-year {
     background-color: #ee6414ef;
     color: #dad5d5f6;
     padding: 5px 20px;
@@ -23,30 +21,19 @@
     height: fit-content;
     font-weight: 900;
 }
-#design-note {
+#project-tag {
     font-size: 1.2rem;
 }
-.sub-dashboard {
+.project-meta {
     display: flex;
 }
 .project-article {
-    padding-bottom: 20px;
+    padding: 1rem 0;
     line-height: 1.5;
 }
 .project-pix {
     padding-bottom: 20px;
 }
-.design2-details>h3 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.design2-details>p {
-    line-height: 1.5;
-    padding-bottom: 20px;
-}
-.design2-pix {
-    margin-bottom: 20px;
-}
-.order-pix-box {
-    margin-bottom: 30px;
+.project-card h3 {
+    margin-top: 1rem;
 }
